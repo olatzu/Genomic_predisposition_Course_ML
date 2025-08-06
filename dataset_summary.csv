@@ -1,0 +1,46 @@
+Column,Data Type,Missing Values,Unique Values,Min,Max,Mean,Mode
+Patient Id,object,0,22083,,,,PID0x1
+Patient Age,float64,1427,15,0.0,14.0,6.974147947327653,4.0
+Genes in mother's side,object,0,2,,,,Yes
+Inherited from father,object,306,2,,,,No
+Maternal gene,object,2810,2,,,,Yes
+Paternal gene,object,0,2,,,,No
+Blood cell count (mcL),float64,0,22083,4.092727034474659,5.609828970497519,4.8988710784395915,4.092727034474659
+Patient First Name,object,0,2524,,,,James
+Family Name,object,9691,6282,,,,Smith
+Father's name,object,0,16368,,,,Clardie
+Mother's age,float64,6036,34,18.0,51.0,34.526453542718265,23.0
+Father's age,float64,5986,45,20.0,64.0,41.9728520842393,20.0
+Institute Name,object,5106,27,,,,Not applicable
+Location of Institute,object,0,26,,,,-
+Status,object,0,2,,,,Alive
+Respiratory Rate (breaths/min),object,2149,2,,,,Normal (30-60)
+Heart Rate (rates/min,object,2113,2,,,,Normal
+Test 1,float64,2127,1,0.0,0.0,0.0,0.0
+Test 2,float64,2152,1,0.0,0.0,0.0,0.0
+Test 3,float64,2147,1,0.0,0.0,0.0,0.0
+Test 4,float64,2140,1,1.0,1.0,1.0,1.0
+Test 5,float64,2170,1,0.0,0.0,0.0,0.0
+Parental consent,object,2125,1,,,,Yes
+Follow-up,object,2166,2,,,,Low
+Gender,object,2173,3,,,,Ambiguous
+Birth asphyxia,object,2139,4,,,,Yes
+Autopsy shows birth defect (if applicable),object,4392,3,,,,Not applicable
+Place of birth,object,2124,2,,,,Institute
+Folic acid details (peri-conceptional),object,2117,2,,,,Yes
+H/O serious maternal illness,object,2152,2,,,,No
+H/O radiation exposure (x-ray),object,2153,4,,,,Not applicable
+H/O substance abuse,object,2195,4,,,,-
+Assisted conception IVF/ART,object,2122,2,,,,Yes
+History of anomalies in previous pregnancies,object,2172,2,,,,Yes
+No. of previous abortion,float64,2162,5,0.0,4.0,2.0030620952763414,2.0
+Birth defects,object,2154,2,,,,Singular
+White Blood cell count (thousand per microliter),float64,2148,17277,3.0,12.0,7.486223987209423,3.0
+Blood test result,object,2145,4,,,,slightly abnormal
+Symptom 1,float64,2155,2,0.0,1.0,0.592482938578884,1.0
+Symptom 2,float64,2222,2,0.0,1.0,0.5518856049544333,1.0
+Symptom 3,float64,2101,2,0.0,1.0,0.5362326093484135,1.0
+Symptom 4,float64,2113,2,0.0,1.0,0.49774661992989483,0.0
+Symptom 5,float64,2153,2,0.0,1.0,0.46191670847967886,0.0
+Genetic Disorder,object,2146,3,,,,Mitochondrial genetic inheritance disorders
+Disorder Subclass,object,2168,9,,,,Leigh syndrome

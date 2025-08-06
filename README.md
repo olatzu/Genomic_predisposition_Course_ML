@@ -8,7 +8,7 @@ The model was trained and evaluated with a focus on high recall and interpretabi
 
 ## Project Components
 
-- **Notebook**: [`notebooks/genomic_model.ipynb`](notebooks/genomic_model.ipynb)  
+- **Notebook**: "Olatz_draft2_genomes-and-genetics-disorder-prediction-ii.ipynb"
   Contains all code, data preprocessing, modeling, and evaluation steps with clear comments.
 
 - **Dataset Description** : "datasheet"
@@ -26,6 +26,12 @@ The dataset was collected and curated by the author for this course project.
 It’s inspired by the Kaggle "Genomes and Genetics Disorder Prediction II" dataset and methodology :contentReference[oaicite:1]{index=1}. 
 The dataset includes multiple encoded genetic inheritance features, clinical variables, and a multi-class label for genetic disorder types.
 
+## Important tables 
+
+Tables created within the notebook like 
+"dataset_summary.csv"
+"dataset_value_counts_compact.csv"
+"model_comparison_summary.csv"
 
 
 ---

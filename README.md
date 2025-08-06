@@ -11,7 +11,7 @@ The model was trained and evaluated with a focus on high recall and interpretabi
 - **Notebook**: [`notebooks/genomic_model.ipynb`](notebooks/genomic_model.ipynb)  
   Contains all code, data preprocessing, modeling, and evaluation steps with clear comments.
 
-- **Dataset Description : "datasheet"
+- **Dataset Description** : "datasheet"
   Explains dataset origin, features, ethical considerations, and preprocessing details.
 
 - **Model Card**: "model_card"

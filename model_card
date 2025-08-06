@@ -1,0 +1,93 @@
+# 🧬 Model Card: Genomic Disorder Prediction (XGBoost)
+
+## Model Details
+
+- **Model Name**: Genomic Disorder Classifier
+- **Model Type**: Multi-class classification
+- **Algorithm**: XGBoost (Extreme Gradient Boosting)
+- **Framework**: Python (XGBoost + Scikit-learn)
+- **Version**: 1.0
+- **Author**: Olatz Mompeo Masachs
+- **Date**: August 2025
+
+This model predicts the presence of various genetic disorders based on clinical and family-related features. 
+It uses XGBoost, selected after testing Random Forest, which failed to capture the relevance of some inherited features. 
+XGBoost offered better recall and interpretability, especially in identifying interactions such as those between `Genes_Mother_Side`, `Inherited_Father`, and `Patient_Age`.
+
+---
+
+## Intended Use
+
+- **Primary use case**: Early screening support tool for genetic disorder risk.
+- **Users**: Medical data scientists, genetic researchers, healthcare AI developers.
+- **Not intended for**: Automated diagnosis or clinical deployment without expert oversight.
+
+---
+
+## Inputs and Outputs
+
+- **Inputs**:
+  - Patient demographics (e.g., `Patient_Age`, `Gender`)
+  - Inherited features (`Genes_Mother_Side`, `Inherited_Father`)
+  - Binary clinical test indicators
+  - All categorical features were label-encoded and scaled
+
+- **Output**:
+  - Predicted disorder class label (multi-class)
+  - Optionally: probability distribution across classes
+
+---
+
+## Training Data
+
+- **Source**: Data collected and compiled by the author for this project
+- **Size**: 2230 x 27
+- **Features**: Combination of binary, categorical, and continuous values
+- **Label**: Target variable representing one of several genetic disorders
+
+### Preprocessing:
+- Categorical features were label-encoded
+- Numerical features were scaled (standard)
+- **SMOTENC** was used to oversample underrepresented classes, accounting for mixed feature types
+
+---
+
+## Evaluation Metrics
+
+- **Primary**:
+  - Macro F1-score
+  - Class-wise recall (important for minimizing false negatives in rare classes)
+
+- **Secondary**:
+  - Accuracy
+  - **Confusion matrix** used for diagnostic analysis
+
+> ROC AUC was not included in evaluation, as the focus was on categorical outcomes and per-class sensitivity.
+
+---
+
+## Interpretability
+
+- **SHAP values** were used to explain predictions and identify key interactions
+- `Genes_Mother_Side` and `Inherited_Father` were recovered as important predictors
+- SHAP interaction plots revealed multi-feature dependencies, improving trust in model outputs
+- Random Forest was discarded due to its failure to highlight clinically meaningful features
+
+---
+
+## Ethical Considerations
+
+- **Bias**: Dataset may reflect feature or label imbalances despite use of SMOTENC
+- **Misclassification Risk**: Model may underperform on unseen or real-world patient populations
+- **Responsibility**: Designed as a research/educational model — not for real-world clinical deployment
+
+---
+
+## Limitations
+
+- Limited generalizability beyond the project dataset
+- Dependent on properly scaled and encoded input data
+- Interpretability tools (e.g., SHAP) are available but require user literacy in ML
+
+
+

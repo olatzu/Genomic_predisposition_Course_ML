@@ -1,0 +1,72 @@
+Dataset Datasheet: Genetic Disorder Inheritance and Patient Health Indicators
+  
+1. Dataset Overview
+  
+
+This dataset captures genetic inheritance information and health indicators related to patients at risk of genetic disorders. It aims to help understand the distribution and contributing factors of hereditary diseases, emphasizing the importance of genetic testing during pregnancy.
+Context
+The global population increase has led to more cases of genetic disorders due to unsustainable growth and limited healthcare access.
+The dataset focuses on genetic disorder types, inheritance from parents, health vitals, and environmental and behavioral risk factors.
+It is intended for use in medical research, genetic counseling, and healthcare planning to mitigate genetic disease risks.
+
+2. Data Composition
+Size
+Number of samples (rows): 22083
+Number of features (columns): 29 (including target)
+  
+Relevant Features and Description
+
+- Genetic Disorder	Categorical	Target variable; type of genetic disorder (Mitochondrial, Single-gene, Multifactorial)
+- Disorder Subclass	Categorical	Further subclassification of the disorder (if applicable)
+- Genes in mother's side	Binary	Indicates presence of a gene defect from patient's mother
+-Inherited from father	Binary	Indicates presence of a gene defect from patient's father
+-Paternal gene	Binary	Indicates gene defect in paternal side of family
+-Respiratory Rate (breaths/min)	Numerical	Patient's respiratory breathing rate
+-Heart Rate (rates/min)	Numerical	Patient's heart rate
+-Parental Consent	Binary	Whether patient's parents approved the treatment plan
+-Follow-up	Ordinal	Patient's level of risk or severity of condition
+-Folic acid details (peri-conceptional)	Categorical	Details of periconceptional folic acid supplementation
+-H/O serious maternal illness	Binary	History of serious maternal illness with labor/delivery consequences
+-H/O radiation exposure (x-ray)	Binary	History of radiation exposure (x-ray)
+-H/O substance abuse	Binary	History of drug addiction in parents
+-Assisted conception	Categorical	Type of infertility treatment used
+-Birth defects	Binary	Presence of birth defects in the patient
+  
+3. Target Variable
+  
+- Genetic Disorder Categories:
+    Mitochondrial genetic inheritance disorders: 10,202 samples
+    Single-gene inheritance diseases: 7,664 samples
+    Multifactorial genetic inheritance disorders: 2,071 samples
+      
+4. Data Collection
+    
+Source:The dataset primarily includes patients from the United States. 
+  (Geographical granularity can also help identify population-specific genetic variations or health disparities linked to environmental and socio-economic conditions)
+
+Method: Collected via clinical genetic testing, patient medical records, and parental interviews.
+
+Timeframe:Including the timestamp or date of data collection (or exposure events) would have been highly beneficial but there was no info. 
+(Knowing when and where data was collected can help researchers correlate genetic disorder occurrences with environmental factors, 
+such as regional exposure to radiation, pollution, or other localized hazards)
+
+5. Uses
+Research on hereditary disease patterns.
+Development of predictive models for genetic disorder risk.
+Enhancing prenatal genetic counseling.
+Public health policy and healthcare resource planning.
+  
+6. Ethical Considerations and Privacy
+Dataset contains sensitive medical and genetic information.
+Consent obtained from parents (as noted in Parental Consent column).
+Data anonymized to protect patient identity.
+Potential biases due to underrepresentation of certain demographics or incomplete data on environmental factors.
+  
+7. Limitations
+Limited to patients with recorded genetic disorder types; may not represent the general population.
+Some features (like environmental exposures) might have incomplete or self-reported data.
+The dataset may not cover all types of genetic disorders or rare variants.
+  
+8. Additional Notes
+Some columns require domain expertise for accurate interpretation.
+Folic acid supplementation is critical for preventing neural tube defects; detailed info helps assess intervention effectiveness.
